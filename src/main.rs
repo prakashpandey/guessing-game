@@ -59,7 +59,13 @@ fn main() {
 	while i<max_attempt {
 		clear();
 		message(&lower_limit, &upper_limit, &max_attempt);
-		println!("Attempt: {} \t\t\t\tScore: {}", i, score);
+		print!("{red} Attempt: {i}{reset} \t\t\t\t{green}Score: {score}{reset}", 
+				red   = color::Fg(color::Red), 
+				i = i, 
+				reset = color::Fg(color::Reset), 
+				green   = color::Fg(color::Green), 
+				score = score
+			);
 		println!("\n");
 		game(&mut score, &lower_limit, &upper_limit);
 		i += 1;
