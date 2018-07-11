@@ -11,6 +11,9 @@ Guessing game is a simple game made to learn rust.
 
 ## How to run?
 
+For linux, you can find a compiled executable at `/target/release/guessing_game`.
+For windows, you can build it from source.
+
 - `git clone https://github.com/prakashpandey/guessing-game`
 - `cd guessing-game`
 - `./target/release/guessing_game`
