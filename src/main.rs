@@ -5,6 +5,7 @@ use std::io;
 use std::io::Write;
 use rand::Rng;
 use termion::color;
+use std::process;
 //use termion::clear;
 
 fn game(score: &mut i32, lower_limit: &i32, upper_limit: &i32) {
@@ -47,7 +48,7 @@ fn clear() {
 	//println!("{}", clear::All);
 }
 
-fn main() {
+fn play_game() {
 	let upper_limit = 10;
 	let lower_limit = 0;
 
@@ -74,4 +75,20 @@ fn main() {
 	println!("\n-------------------------------------------------------");
 	println!("|Total attempt: {} \t\t\tTotal score: {}|", i, score);
 	println!("-------------------------------------------------------");
+}
+
+fn main() {
+	while true {
+		play_game();
+		print!("Press 1 to play again\t\t\t");
+		io::stdout().flush().ok().expect("Could not flush stdio");
+		let mut play_again = String::new();
+		io::stdin().read_line(&mut play_again)
+			.expect("Error reading line");
+		let play: i32 = play_again.trim().parse().expect("Please type a number");	
+		if play != 1 {
+			process::exit(1);
+		}
+
+	}
 }
