@@ -5,7 +5,7 @@ Guessing game is a simple game made to learn rust.
 ## How it works?
 
 - System generates a random number between [x-y]. 
-  Vars `x, y` can be configured. Default `x=0, y=15`.
+  Vars `x, y` can be configured. Default `x=0, y=10`.
 - User gets `5` chance to pridict this number
 - If predicted correctly, user's score gets incremented
 
