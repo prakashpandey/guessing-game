@@ -9,6 +9,19 @@ Guessing game is a simple game made to learn rust.
 - User gets `5` chance to pridict this number
 - If predicted correctly, user's score gets incremented
 
+## How to run?
+
+- `git clone https://github.com/prakashpandey/guessing-game`
+- `cd guessing-game`
+- `./target/release/guessing_game`
+
+You can also add `guessing_game` to bashrc.
+
+## How to build from source?
+- `git clone https://github.com/prakashpandey/guessing-game`
+- `cd guessing-game`
+- `cargo build --release`
+
 ## Screenshots
 
 <img src="/docs/media/screen-1.png" alt="Screen-1"/>
