@@ -48,7 +48,7 @@ fn clear() {
 }
 
 fn main() {
-	let upper_limit = 15;
+	let upper_limit = 10;
 	let lower_limit = 0;
 
 	let mut score = 0;
