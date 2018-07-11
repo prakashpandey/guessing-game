@@ -38,7 +38,7 @@ fn game(score: &mut i32, lower_limit: &i32, upper_limit: &i32) {
 }
 
 fn message(lower_limit: &i32, upper_limit: &i32, max_attempt: &i32) {
-	println!("\n-----------------------------------------------------------------------------------------------------------");
+	println!("\n\n-----------------------------------------------------------------------------------------------------------");
 	println!("Guess the number[{} - {}] \t\tmax attempt: {}", *lower_limit, *upper_limit, *max_attempt);
 }
 
